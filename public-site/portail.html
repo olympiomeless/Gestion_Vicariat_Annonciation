@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vicariat de l'Annonciation — Accueil</title>
+<meta name="description" content="Vicariat de l'Annonciation — Cœurs Vaillants – Âmes Vaillantes, Diocèse de Yopougon. Choisissez le site officiel ou l'espace section.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F4C64'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23B8933F' text-anchor='middle'%3EVA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Work+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#F2F7F6; --surface:#FFFFFF; --surface-2:#E6EFEC;
+    --ink:#12222C; --ink-soft:#4B646E; --ink-faint:#7E969E;
+    --primary:#0F4C64; --primary-strong:#0A3849; --primary-soft:#DDEEF2;
+    --gold:#B8933F; --gold-soft:#F3E7C8;
+    --line:#CFE1DC; --shadow:0 24px 48px -28px rgba(9,38,48,.4);
+    --hero-bg:#0A3849;
+    --radius:20px;
+    --font-d:'Fraunces',Georgia,'Times New Roman',serif;
+    --font-b:'Work Sans',-apple-system,'Segoe UI',sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0B1A20; --surface:#0F262E; --surface-2:#143038;
+      --ink:#E9F3F2; --ink-soft:#AFC8CA; --ink-faint:#7C9C9F;
+      --primary:#6FC2DA; --primary-strong:#3FA3BE; --primary-soft:#12363F;
+      --gold:#E6C177; --gold-soft:#3B2F17;
+      --line:#1E4048; --shadow:0 24px 48px -28px rgba(0,0,0,.65);
+      --hero-bg:#071F26;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0B1A20; --surface:#0F262E; --surface-2:#143038;
+    --ink:#E9F3F2; --ink-soft:#AFC8CA; --ink-faint:#7C9C9F;
+    --primary:#6FC2DA; --primary-strong:#3FA3BE; --primary-soft:#12363F;
+    --gold:#E6C177; --gold-soft:#3B2F17;
+    --line:#1E4048; --shadow:0 24px 48px -28px rgba(0,0,0,.65);
+    --hero-bg:#071F26;
+  }
+
+  *{box-sizing:border-box;}
+  body{margin:0;min-height:100vh;background:linear-gradient(160deg, var(--hero-bg) 0%, var(--primary-strong) 100%);color:#fff;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;padding:28px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:900px;width:100%;}
+  .brand{text-align:center;margin-bottom:40px;}
+  .brand .eyebrow{font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 .9em;}
+  .brand h1{font-family:var(--font-d);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;margin:0 0 .3em;color:#fff;}
+  .brand p{color:#C9DEE3;margin:0;font-size:1rem;}
+
+  .choices{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  @media (max-width:720px){ .choices{grid-template-columns:1fr;} }
+
+  .choice-card{background:var(--surface);color:var(--ink);border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;text-align:left;}
+  .choice-icon{width:52px;height:52px;border-radius:14px;background:var(--primary-soft);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+  .choice-card h2{font-family:var(--font-d);font-size:1.3rem;margin:0;color:var(--ink);}
+  .choice-card p{color:var(--ink-soft);font-size:.92rem;margin:0;flex-grow:1;line-height:1.55;}
+  .choice-card .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:var(--font-b);font-weight:700;font-size:.92rem;padding:.85em 1.4em;border-radius:100px;text-decoration:none;transition:transform .15s ease, background .2s ease;margin-top:6px;}
+  .choice-card .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--gold);color:#1B1404;}
+  .btn-primary:hover{background:#CBA858;}
+  .btn-line{border:1.5px solid var(--primary);color:var(--primary);background:transparent;}
+  .btn-line:hover{background:var(--primary-soft);}
+
+  .foot-note{text-align:center;margin-top:34px;font-size:.8rem;color:#A9CDD4;}
+  .foot-note a{color:#fff;font-weight:600;text-decoration:underline;}
+
+  .portal-stats{display:flex;justify-content:center;gap:28px;margin:22px 0 0;flex-wrap:wrap;}
+  .portal-stat b{font-family:var(--font-d);font-size:1.6rem;color:#fff;display:block;line-height:1;}
+  .portal-stat span{font-size:.72rem;color:#A9CDD4;text-transform:uppercase;letter-spacing:.08em;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="brand">
+    <p class="eyebrow">Mouvement Cœurs Vaillants – Âmes Vaillantes · Diocèse de Yopougon</p>
+    <h1>Vicariat de l'Annonciation</h1>
+    <p>Choisissez où vous souhaitez aller.</p>
+    <div class="portal-stats">
+      <div class="portal-stat"><b id="portal-stat-sections">—</b><span>Sections</span></div>
+      <div class="portal-stat"><b id="portal-stat-militants">—</b><span>Militants 2025-2026</span></div>
+      <div class="portal-stat"><b id="portal-stat-rang">—</b><span>Vicariat du diocèse</span></div>
+    </div>
+  </div>
+
+  <div class="choices">
+    <div class="choice-card">
+      <div class="choice-icon">🏠</div>
+      <h2>Site officiel du vicariat</h2>
+      <p>Présentation du vicariat, ses cinq sections, le programme, le bureau, la galerie et les actualités — ouvert à tous, sans connexion.</p>
+      <a class="btn btn-primary" href="index.html">Visiter le site officiel</a>
+    </div>
+
+    <div class="choice-card">
+      <div class="choice-icon">🔒</div>
+      <h2>Espace section</h2>
+      <p>Connexion réservée aux responsables de section : documents, actualités et programme de votre section. Une authentification est requise.</p>
+      <a class="btn btn-line" id="espace-section-link" href="#">Se connecter</a>
+    </div>
+  </div>
+
+  <p class="foot-note">Responsable d'une section et pas encore de compte ? Rapprochez-vous du <a href="index.html#contact">Bureau du Vicariat</a>.</p>
+</div>
+
+<script>
+  // URL de l'espace d'administration (application "admin-app"), surchargeable
+  // sans toucher au code via window.VICARIAT_ADMIN_APP_URL = "https://..."
+  // défini dans un bloc <script> placé avant celui-ci — même convention que
+  // dans index.html.
+  (function(){
+    var ADMIN_APP_URL = window.VICARIAT_ADMIN_APP_URL || "http://localhost:5173";
+    var link = document.getElementById('espace-section-link');
+    if (link) link.href = ADMIN_APP_URL + '/section/documents';
+  })();
+
+  // Chiffres clés mis en ligne par l'admin (même source que le bandeau
+  // d'accueil du site officiel, voir index.html) : nombre de sections,
+  // total des militants et rang du vicariat au sein du diocèse. Surchargeable
+  // via window.VICARIAT_API_BASE_URL — même convention que dans index.html.
+  (function(){
+    var API_BASE_URL = window.VICARIAT_API_BASE_URL || "http://localhost:8000/api/v1";
+
+    function apiGet(path){
+      return fetch(API_BASE_URL + path, {cache:'no-store'}).then(function(r){
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      });
+    }
+
+    function setText(id, value){
+      var el = document.getElementById(id);
+      if (el && value !== undefined && value !== null && value !== '') el.textContent = value;
+    }
+
+    apiGet('/public/mouvement').then(function(m){
+      setText('portal-stat-rang', m.rang_diocese);
+    }).catch(function(){});
+
+    apiGet('/public/sections').then(function(list){
+      var count = list.length;
+      setText('portal-stat-sections', (count < 10 ? '0' : '') + count);
+    }).catch(function(){});
+
+    apiGet('/public/effectifs').then(function(list){
+      var total = list.reduce(function(sum, item){ return sum + (item.effectif || 0); }, 0);
+      setText('portal-stat-militants', total);
+    }).catch(function(){});
+  })();
+</script>
+
+</body>
+</html>
